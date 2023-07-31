@@ -1,0 +1,143 @@
+{
+  "user": [
+    {
+      "_id": 1,
+      "fullName": "Walid ben othman",
+      "email": "walid.benothman@esprit.tn",
+      "password": "123456"
+    }
+  ],
+  "projects": [
+    {
+      "_id": 1,
+      "title": "e-commaerce",
+      "description": "@BharathShetty Yes, you could separate into multiple spans/divs/whatever. And if you mean if it's possible by css only then no it's not possible to match n worlds by css. You can do an overflow but it won't match words. ",
+      "image": "https://images.pexels.com/photos/15129223/pexels-photo-15129223.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load",
+      "video": "https://player.vimeo.com/progressive_redirect/playback/790665520/rendition/540p/file.mp4?loc=external&oauth2_token_id=57447761&signature=c5858ce72ec414634e2c3b9d24730a07381a9077c87a998f80a57bfb018eebd2",
+      "github": "http://github",
+      "url": "http://github.com"
+    },
+    {
+      "_id": 2,
+      "title": "e-commaerce",
+      "description": "@BharathShetty Yes, you could separate into multiple spans/divs/whatever. And if you mean if it's possible by css only then no it's not possible to match n worlds by css. You can do an overflow but it won't match words. ",
+      "image": "https://images.pexels.com/photos/15129223/pexels-photo-15129223.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load",
+      "video": "https://player.vimeo.com/progressive_redirect/playback/790665520/rendition/540p/file.mp4?loc=external&oauth2_token_id=57447761&signature=c5858ce72ec414634e2c3b9d24730a07381a9077c87a998f80a57bfb018eebd2",
+      "github": "http://github",
+      "url": "http://github.com"
+    },
+    {
+      "_id": 3,
+      "title": "e-commaerce",
+      "description": "@BharathShetty Yes, you could separate into multiple spans/divs/whatever. And if you mean if it's possible by css only then no it's not possible to match n worlds by css. You can do an overflow but it won't match words. ",
+      "image": "https://images.pexels.com/photos/15129223/pexels-photo-15129223.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load",
+      "video": "https://player.vimeo.com/progressive_redirect/playback/790665520/rendition/540p/file.mp4?loc=external&oauth2_token_id=57447761&signature=c5858ce72ec414634e2c3b9d24730a07381a9077c87a998f80a57bfb018eebd2",
+      "github": "http://github",
+      "url": "http://github.com"
+    },
+    {
+      "_id": 4,
+      "title": "e-commaerce",
+      "description": "@BharathShetty Yes, you could separate into multiple spans/divs/whatever. And if you mean if it's possible by css only then no it's not possible to match n worlds by css. You can do an overflow but it won't match words. ",
+      "image": "https://images.pexels.com/photos/15129223/pexels-photo-15129223.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load",
+      "video": "https://player.vimeo.com/progressive_redirect/playback/790665520/rendition/540p/file.mp4?loc=external&oauth2_token_id=57447761&signature=c5858ce72ec414634e2c3b9d24730a07381a9077c87a998f80a57bfb018eebd2",
+      "github": "http://github",
+      "url": "http://github.com"
+    },
+    {
+      "_id": 5,
+      "title": "e-commaerce",
+      "description": "@BharathShetty Yes, you could separate into multiple spans/divs/whatever. And if you mean if it's possible by css only then no it's not possible to match n worlds by css. You can do an overflow but it won't match words. ",
+      "image": "https://images.pexels.com/photos/15129223/pexels-photo-15129223.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load",
+      "video": "https://player.vimeo.com/progressive_redirect/playback/790665520/rendition/540p/file.mp4?loc=external&oauth2_token_id=57447761&signature=c5858ce72ec414634e2c3b9d24730a07381a9077c87a998f80a57bfb018eebd2",
+      "github": "http://github",
+      "url": "http://github.com"
+    }
+  ],
+  "educations": [
+    {
+      "_id": 1,
+      "title": "Technicien",
+      "decription": "Diplôme national de licence appliquée en Technologies de l'Informatique",
+      "spicality": "Systèmes Embarqués",
+      "school": "Institut supérieur d'informatique - ISI Ariana",
+      "icon": "https://static.wixstatic.com/media/2b0437_ad8b8644b9d54855aa2ef06d0f8a0db7~mv2.png/v1/fill/w_182,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/image_2020-10-30_112813.png",
+      "date": "2016-2019"
+    },
+    {
+      "_id": 2,
+      "title": "Technicien",
+      "decription": "Diplôme national de licence appliquée en Technologies de l'Informatique",
+      "spicality": "Systèmes Embarqués",
+      "school": "Institut supérieur d'informatique - ISI Ariana",
+      "icon": "https://static.wixstatic.com/media/2b0437_ad8b8644b9d54855aa2ef06d0f8a0db7~mv2.png/v1/fill/w_182,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/image_2020-10-30_112813.png",
+      "date": "2016-2019"
+    },
+    {
+      "_id": 3,
+      "title": "Technicien",
+      "decription": "Diplôme national de licence appliquée en Technologies de l'Informatique",
+      "spicality": "Systèmes Embarqués",
+      "school": "Institut supérieur d'informatique - ISI Ariana",
+      "icon": "https://static.wixstatic.com/media/2b0437_ad8b8644b9d54855aa2ef06d0f8a0db7~mv2.png/v1/fill/w_182,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/image_2020-10-30_112813.png",
+      "date": "2016-2019"
+    }
+  ],
+  "certifications": [
+    {
+      "_id": 1,
+      "title": "Responsive Web Design",
+      "image": "https://static.wixstatic.com/media/2b0437_95945b3d875e4621826799a6a6bedbf2~mv2.jpg/v1/fill/w_763,h_612,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/2b0437_95945b3d875e4621826799a6a6bedbf2~mv2.jpg",
+      "icon": "https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg"
+    }
+  ],
+  "skills": [
+    {
+      "_id": 1,
+      "title": "HTML",
+      "icon": "https://imgs.search.brave.com/izc337Q7Bg19JUYPLw10tWDDAXIuHgQBJdJnSQtMdAc/rs:fit:624:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5s/T1diZUo3cnhTdnVz/UXVvaTdTYzVBSGFG/TiZwaWQ9QXBp"
+    },
+    {
+      "_id": 2,
+      "title": "HTML",
+      "icon": "https://imgs.search.brave.com/izc337Q7Bg19JUYPLw10tWDDAXIuHgQBJdJnSQtMdAc/rs:fit:624:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5s/T1diZUo3cnhTdnVz/UXVvaTdTYzVBSGFG/TiZwaWQ9QXBp"
+    },
+    {
+      "_id": 3,
+      "title": "HTML",
+      "icon": "https://imgs.search.brave.com/izc337Q7Bg19JUYPLw10tWDDAXIuHgQBJdJnSQtMdAc/rs:fit:624:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5s/T1diZUo3cnhTdnVz/UXVvaTdTYzVBSGFG/TiZwaWQ9QXBp"
+    },
+    {
+      "_id": 4,
+      "title": "HTML",
+      "icon": "https://imgs.search.brave.com/izc337Q7Bg19JUYPLw10tWDDAXIuHgQBJdJnSQtMdAc/rs:fit:624:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5s/T1diZUo3cnhTdnVz/UXVvaTdTYzVBSGFG/TiZwaWQ9QXBp"
+    },
+    {
+      "_id": 5,
+      "title": "HTML",
+      "icon": "https://imgs.search.brave.com/izc337Q7Bg19JUYPLw10tWDDAXIuHgQBJdJnSQtMdAc/rs:fit:624:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5s/T1diZUo3cnhTdnVz/UXVvaTdTYzVBSGFG/TiZwaWQ9QXBp"
+    },
+    {
+      "_id": 6,
+      "title": "HTML",
+      "icon": "https://imgs.search.brave.com/izc337Q7Bg19JUYPLw10tWDDAXIuHgQBJdJnSQtMdAc/rs:fit:624:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5s/T1diZUo3cnhTdnVz/UXVvaTdTYzVBSGFG/TiZwaWQ9QXBp"
+    }
+  ],
+  "experiance": [
+    {
+      "_id": 1,
+      "title": "developer",
+      "description": "good",
+      "date": "2022",
+      "company": "google",
+      "comapnyIcon": "http://"
+    }
+  ],
+  "vieAssociative": [
+    {
+      "_id": 1,
+      "title": "developer",
+      "image": "https://images.pexels.com/photos/1420769/pexels-photo-1420769.jpeg?auto=compress&cs=tinysrgb&w=1600"
+    }
+  ]
+}

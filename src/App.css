@@ -1,0 +1,867 @@
+@import url(https://fonts.googleapis.com/css?family=Chewy);
+:root {
+  --body-bg: #333;
+  --primary-color: #fff;
+  --purple: purple;
+  --black: #111;
+}
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  user-select: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--body-bg);
+  position: relative;
+  color: var(--primary-color);
+  
+}
+svg{
+  cursor: pointer;
+}
+.fullscreen {
+  height: fit-content !important;
+}
+#walid {
+  width: 100%;
+  height: 100%;
+
+  transition: all 0.4s ease-in-out;
+}
+#walid * {
+  width: 100%;
+  height: 100%;
+}
+#walid video,
+#walid img {
+  border-radius: 8px;
+}
+#vi {
+  width: 100%;
+  height:100%;
+  transition: all 0.4s ease-in-out;
+}
+#vi * {
+  width: 100%;
+  height: 100%;
+  transform-origin: center 100px;
+  border-radius: 8px !important;
+}
+#vi video,
+#vi img {
+  height: 100% !important;
+  border-radius: 8px !important;
+}
+ 
+ 
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--primary-color);
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  cursor: pointer;
+  font-size: 14px;
+  font-family: "Chewy", cursive !important;
+  font-weight: 100;
+  padding: 5px;
+  position: relative;
+}
+li::before {
+  content: "";
+  width: 0%;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: var(--purple);
+  transition: all 0.4s ease;
+}
+li:hover:before {
+  width: 100%;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+button {
+  cursor: pointer;
+}
+.loaderNone {
+  display: none;
+}
+.loader {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--body-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+}
+#loading {
+  position: relative;
+  font-size: 5rem;
+  font-family: "Chewy", cursive !important;
+  text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.356);
+}
+#loading::before {
+  content: attr(title);
+  width: 0px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--purple);
+  overflow: hidden;
+  animation: load 1s ease-in-out infinite;
+}
+@keyframes load {
+  form {
+    width: 0%;
+  }
+  to {
+    width: fit-content;
+  }
+}
+.not_Found {
+  font-family: "Chewy", cursive;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  text-align: center;
+}
+.not_Found h3 {
+  font-size: 20px;
+  margin-top: 15px;
+}
+#empty {
+  width: 100%;
+  height: 4.3rem;
+}
+/*== Navbar ==*/
+.nav {
+  width: 100%;
+  height: 4.3rem;
+  padding: 1rem 2rem;
+  background-color: var(--body-bg);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+.nav h1 {
+  font-family: "Chewy", cursive !important;
+  letter-spacing: 5px;
+  text-shadow: 3px 5px 3px rgba(0, 0, 0, 0.356);
+  font-size: 35px;
+  transition: all 0.2s ease;
+}
+.nav h1:hover {
+  transform: scale(1.1);
+}
+.nav h1 span {
+  font-family: "Chewy", cursive !important;
+  color: var(--purple);
+}
+.nav,
+.nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+.nav img {
+  display: none;
+}
+
+/*== Description==*/
+.description {
+  width: 100%;
+  height: 100%;
+  padding: 11vh 7vw;
+}
+.description span {
+  color: var(--purple);
+  letter-spacing: 10px;
+}
+
+.description h3 {
+  font-weight: 900;
+  margin-top: 10px;
+}
+button {
+  margin-top: 15px;
+  background-color: transparent;
+  color: white;
+  padding: 7px 15px;
+  font-weight: 900;
+  font-size: 16px;
+  border: solid 1px var(--purple);
+  position: relative;
+  z-index: 1;
+}
+button::before {
+  content: "";
+  width: 0%;
+  height: 100%;
+  background-color: var(--purple);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.4s ease;
+  z-index: -1;
+}
+button::after {
+  content: "";
+  width: 0%;
+  height: 100%;
+  background-color: var(--purple);
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: all 0.4s ease;
+  z-index: -1;
+}
+button:hover::after,
+button:hover::before {
+  width: 50%;
+}
+.react-multiple-carousel__arrow--right::after,
+.react-multiple-carousel__arrow--right::before,
+.react-multiple-carousel__arrow--left::after,
+.react-multiple-carousel__arrow--left::before{
+  background-color: transparent;
+}
+ 
+
+/*== Apropos ==*/
+#apropos {
+  width: 100%;
+  height: fit-content;
+  padding: 7vh 7vw;
+  position: relative;
+  z-index: 1;
+}
+#apropos::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--purple);
+  position: absolute;
+  top: 10px;
+  left: 0;
+  z-index: -1;
+  transform: skewY(2deg);
+  border-top: dashed 9px var(--body-bg);
+  border-bottom: dashed 9px var(--body-bg);
+}
+#apropos h1 {
+  font-family: "Chewy", cursive;
+  text-shadow: 3px 5px 3px rgba(0, 0, 0, 0.356);
+}
+#apropos > div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+#apropos > div > div {
+  width: 100%;
+}
+#apropos > div div > div {
+  background-color: var(--body-bg);
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 3px 5px 3px rgba(0, 0, 0, 0.356);
+  position: relative;
+  z-index: 1;
+  font-family: "Chewy", cursive;
+}
+#apropos > div div > div::before {
+  content: "";
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--black);
+  z-index: -1;
+  transition: all 0.4s ease;
+}
+#apropos > div div > div:hover::before {
+  width: 100%;
+}
+
+#apropos > div div > div + div {
+  margin-top: 10px;
+}
+
+/*== Education ==*/
+#Education {
+  width: 100%;
+  height: 100%;
+  padding: 8vh 7vw;
+}
+#Education h1 {
+  font-family: "Chewy", cursive;
+}
+#Education .box {
+  padding: 2rem;
+  width: 100%;
+  gap: 30px;
+  place-items: center;
+  place-content: center;
+}
+#Education .box > div {
+  width: 100%;
+  text-align: center;
+  filter: blur(10px);
+  transition: all 0.3s ease-in-out;
+}
+#Education .box > div:hover {
+  filter: blur(0px);
+}
+#Education .box > div h2 {
+  font-size: 17px;
+  font-family: "Chewy", cursive;
+  padding: 15px 0;
+}
+#Education .box > div img {
+  width: 100%;
+  border-radius: 8px;
+}
+#Education .box > div button {
+  font-size: 14px;
+}
+/*=== ReadMoreModal ===*/
+#modal {
+  width: 60%;
+  height: fit-content;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--body-bg);
+  color: var(--primary-color);
+  z-index: 333;
+  padding: 2.5rem;
+  border-radius: 8px;
+}
+#modal > span {
+  padding: 10px 15px;
+  position: absolute;
+  right: -1.2rem;
+  top: -1.4rem;
+  font-size: 22px;
+  font-weight: 900;
+  background-color: var(--black);
+  border-radius: 50%;
+  cursor: pointer;
+}
+#modal > h1 {
+  width: fit-content;
+  background-color: var(--purple);
+  padding: 5px 10px;
+}
+#modal > div h2 {
+  padding-block: 15px;
+}
+#modal > div h3 {
+  color: pink;
+  font-size: 14px;
+}
+#modal > div p {
+  font-size: 16px;
+  text-align: center;
+  padding-top: 0.5rem;
+}
+/*=== Compétences ===*/
+#Compétences {
+  width: 100%;
+  height: fit-content;
+  z-index: 1;
+  color: var(--primary-color);
+  position: relative;
+  padding: 5vh 7vw;
+}
+#Compétences::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  background-color: var(--black);
+  border-top: dashed 9px var(--body-bg);
+  border-bottom: dashed 9px var(--body-bg);
+  z-index: -1;
+  transform: skewY(2deg);
+}
+#Compétences > h1 {
+  font-family: "Chewy", cursive;
+}
+#Compétences > div {
+  width: 100%;
+  height: fit-content;
+  gap: 10px;
+  padding-block: 2rem;
+}
+#Compétences .skills_card {
+  width: 90%;
+  height: calc(100% + 2rem);
+  overflow: hidden;
+  border-radius: 50%;
+  position: relative;
+  border: solid 5px var(--purple);
+  box-shadow: 1px 5px 3px rgba(0, 0, 0, 0.356);
+}
+#Compétences .skills_card img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+#Compétences .skills_card:hover img {
+  transform: scale(1.3) rotate(10deg);
+}
+#Compétences .skills_card div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.344);
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+#Compétences .skills_card div h1 {
+  font-family: "Chewy", cursive !important;
+  color: var(--primary-color);
+}
+#Compétences .skills_card:hover div {
+  visibility: visible;
+}
+/*=== Certif ===*/
+#certif {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 7vh 7vw;
+  color: var(--primary-color);
+}
+#certif h1 {
+  font-family: "Chewy", cursive !important;
+}
+#certif .box {
+  gap: 20px;
+  padding: 2rem 0;
+}
+#certif .box div {
+  width: 100%;
+  height: fit-content;
+  position: relative;
+}
+#certif .box div h3 {
+  color: var(--purple);
+  font-size: 16px;
+  margin-top: 15px;
+  text-align: center;
+}
+#certif .box div .eye {
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--purple);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-inline: auto;
+}
+#certif .box div img {
+  width: 100%;
+  height: 100%;
+}
+#certif .box div #fullCertif {
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/*=== Projects ===*/
+#projects {
+  width: 100%;
+  height: 100%;
+  padding: 7vh 7vw;
+  position: relative;
+  z-index: 1;
+}
+#projects::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  background-color: var(--purple);
+  border-top: dashed 9px var(--body-bg);
+  border-bottom: dashed 9px var(--body-bg);
+  z-index: -1;
+  transform: skewY(2deg);
+}
+#projects > h1 {
+  font-family: "Chewy", cursive;
+}
+#projects .projects_demo {
+  width: 100%;
+  height: 100%;
+  padding-top: 2rem;
+}
+#projects .projects_demo .icon_box {
+  width: 100%;
+  height: fit-content !important;
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+  padding: 10px 0;
+}
+#projects .projects_demo .icon_box div {
+  width: fit-content;
+  background-color: var(--primary-color);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+#projects .projects_demo .icon_box div svg {
+  border-radius: 0 !important;
+}
+div[data-testid="hover-video-player-container"],
+div[data-testid="paused-overlay-wrapper"],
+div[data-testid="loading-overlay-wrapper"] {
+  height: 150px !important;
+}
+#projects .projects_demo .content {
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+}
+#projects .projects_demo .content h2 {
+  font-family: "Chewy", cursive;
+  margin-top: 5px;
+}
+#projects .projects_demo .content .more {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  margin: 0;
+  margin-top: 5px;
+}
+ 
+#projects .projects_demo .content > button {
+  width: fit-content;
+  height: fit-content;
+  border: dashed 9px var(--purple);
+  background-color: var(--body-bg);
+  font-size: 14px;
+  margin: auto;
+  margin-top: 10px;
+  text-align: center;
+}
+/*=== Experience ===*/
+#Experiences{
+  width: 100%;
+  padding: 7vh 7vw;
+}
+#Experiences h1{
+  font-family: "Chewy", cursive;
+}
+#Experiences .card-section{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  padding-block: 1.5rem;
+}
+#Experiences .card-section .exp{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: var(--purple);
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 0px 3px 2px 5px #11111140;
+}
+#Experiences .card-section .exp .num{
+  width: 10% !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background-color: var(--body-bg);
+  box-shadow: 0px 0px 2px 5px #11111140;
+
+}
+#Experiences .card-section .exp .content{
+  width: 90%;
+  padding: .5rem;
+}
+#Experiences .card-section .exp .content h2{
+  color: black;
+}
+#Experiences .card-section .exp .content h3{
+  font-size: 1.1rem;
+  padding-top: 5px;
+}
+#Experiences .card-section .exp .content h4{
+  font-size: 0.9rem;
+  padding-top: 5px;
+}
+#Experiences .card-section .exp .content p{
+ font-size: 14px;
+ color: #111;
+ font-weight: 900;
+  padding-top: 5px;
+}
+/*== Vie ==*/
+#vie{
+  padding: 7vh 7vw;
+}
+.marquee {
+  display: flex;
+  mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 0) 100%);
+  max-width: 100vw;
+  overflow: hidden;
+  user-select: none;
+  margin-top: 1.5rem;
+  height: 500px;
+}
+ .vie{
+  font-family: "Chewy", cursive;
+ }
+.marquee .slide {
+ 
+  animation: slide-x 10s linear infinite;
+ height: 100%;
+  min-width: 100vh;
+  
+}
+.marquee .slide img{
+  margin: auto;
+  width: 39%;
+  height: 70%;
+  aspect-ratio:  1 / 2 !important;
+  border-radius: 8px;
+}
+.marquee .slide h3{
+  width: fit-content;
+  margin: auto;
+font-size: 1.5rem;
+font-family: 'Chewy',cursive;
+  margin-top: 15px;
+  text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.356);
+
+}
+@keyframes slide-x {
+  0% {
+    transform: translateX(0);
+ }
+  100% {
+    transform: translateX(-100%);
+ }
+}
+/*== Footer ==*/
+#footer{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--purple);
+  padding:  1.5rem;
+}
+#footer h3{
+  font-size: 14px;
+
+}
+#footer h3 span{
+  font-family: 'chewy' ,cursive;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+#footer div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+/*== Media Query ==*/
+@media (width <= 1024px) {
+  .nav ul {
+    height: 100%;
+    position: fixed;
+    top: 4.3rem;
+    left: 0;
+    width: 100%;
+    background-color: var(--body-bg);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    z-index: 999;
+  }
+  #hide {
+    display: none;
+  }
+  .nav ul li {
+    margin-top: 7px;
+  }
+  .nav img {
+    display: block;
+  }
+}
+@media (320px <= width <= 480px) {
+  .description {
+    text-align: center;
+  }
+  .description span {
+    font-size: 14px;
+  }
+  .description h1 {
+    font-size: 45px;
+  }
+  .description h3 {
+    font-size: 16px;
+  }
+  #apropos::before {
+    top: 0;
+  }
+  #apropos > div {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #Education .box {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #Compétences {
+    padding-block: 9vh;
+  }
+  #Compétences > div {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 5vh 13vw;
+    gap: 40px;
+  }
+
+  #certif {
+    padding: 10vh 9vw;
+  }
+  #certif .box {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+@media (481px <= width <= 768px) {
+  .description {
+    text-align: center;
+  }
+  .description span {
+    font-size: 16px;
+  }
+  .description h1 {
+    font-size: 55px;
+  }
+  .description h3 {
+    font-size: 17px;
+  }
+  #apropos::before {
+    top: 5px;
+  }
+  #apropos > div {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #Education .box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #Compétences {
+    padding-block: 9vh;
+  }
+  #Compétences > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5vh 3vw;
+    gap: 40px;
+  }
+  #certif {
+    padding: 10vh 9vw;
+  }
+  #certif .box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+@media (768px <= width) {
+  .description h1 {
+    font-size: 60px;
+  }
+  .description h3 {
+    font-size: 18px;
+  }
+  #Education .box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #Compétences > div {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+  #certif .box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
